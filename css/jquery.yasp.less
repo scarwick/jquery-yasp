@@ -1,0 +1,66 @@
+/**
+ *
+ * Functions
+ *
+ */
+.opacity(@opacity){
+    -moz-opacity: @opacity;
+    -khtml-opacity: @opacity;
+    -webkit-opacity: @opacity;
+    opacity: @opacity;
+    @opperc: @opacity * 100;
+    -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
+    filter: ~"alpha(opacity=@{opperc})";
+}
+
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius:    @radius;
+    border-radius:         @radius;
+
+    -moz-background-clip:    padding;
+    -webkit-background-clip: padding-box;
+    background-clip:         padding-box;
+}
+
+.shadow(@top, @left, @spread, @color){
+    -moz-box-shadow:    @top @left @spread @color;
+    -webkit-box-shadow: @top @left @spread @color;
+    box-shadow:         @top @left @spread @color;
+}
+
+/**
+ *
+ * Custom Styles
+ *
+ */
+.jq-yasp-scrollbox {
+    background-color:#eee;
+    width:8px;
+    height:400px;
+    padding:1px;
+    position:fixed;
+    top:5px;
+    right:5px;
+
+    .border-radius();
+    .opacity(0.2);
+}
+.jq-yasp-scroll-padding {
+    width:100%;
+    height:100%;
+    position:relative;
+}
+.jq-yasp-scrollbar {
+    top:0px;
+    width:8px;
+    height:50px;
+    background-color:#555;
+    .border-radius();
+    position:absolute;
+    .opacity(0.6);
+}
+
+:hover.jq-yasp-scrollbar {
+    .opacity(0.8);
+}

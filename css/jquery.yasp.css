@@ -1,17 +1,1 @@
-#jq-yasp-scrollbox {
-    background-color:#eee;
-    width:20px;
-    height:400px;
-    position:fixed;
-    top:2px;
-    right:2px;
-}
-#jq-yasp-scrollbar {
-    width:20px;
-    height:50px;
-    background-color:#ccc;
-}
-
-:hover#jq-yasp-scrollbar {
-    background-color:#bbb;
-}
+.jq-yasp-scrollbox{background-color:#eee;width:8px;height:400px;padding:1px;position:fixed;top:5px;right:5px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;-moz-opacity:0.2;-khtml-opacity:0.2;-webkit-opacity:0.2;opacity:0.2;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);filter:alpha(opacity=20);}.jq-yasp-scroll-padding{width:100%;height:100%;position:relative;}.jq-yasp-scrollbar{top:0px;width:8px;height:50px;background-color:#555;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;position:absolute;-moz-opacity:0.6;-khtml-opacity:0.6;-webkit-opacity:0.6;opacity:0.6;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);filter:alpha(opacity=60);}:hover.jq-yasp-scrollbar{-moz-opacity:0.8;-khtml-opacity:0.8;-webkit-opacity:0.8;opacity:0.8;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);filter:alpha(opacity=80);}

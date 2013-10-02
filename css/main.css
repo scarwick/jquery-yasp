@@ -11,8 +11,13 @@ textarea {
 }
 
 body {
+    background-color:#555;
     font-size: 1em;
     line-height: 1.4;
+    margin:0;
+}
+p {
+    margin-top:0;
 }
 
 ::-moz-selection {
